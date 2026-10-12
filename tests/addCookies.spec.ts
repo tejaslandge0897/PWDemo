@@ -24,5 +24,8 @@ test("Use existing cookies and login",async({browser})=>{
     const page=await context.newPage()
     await page.goto(pageUrl)
     await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Dashboard' })).toBeVisible()
    // await page.waitForTimeout(3000)
+   
 })
